@@ -1,0 +1,15 @@
+C:\Users\kolh_aar\TrainingMaterial\PracticeCode\CountOccuranceOfEachCharacter\bin\Debug\net6.0\CountOccuranceOfEachCharacter.exe
+C:\Users\kolh_aar\TrainingMaterial\PracticeCode\CountOccuranceOfEachCharacter\bin\Debug\net6.0\CountOccuranceOfEachCharacter.deps.json
+C:\Users\kolh_aar\TrainingMaterial\PracticeCode\CountOccuranceOfEachCharacter\bin\Debug\net6.0\CountOccuranceOfEachCharacter.runtimeconfig.json
+C:\Users\kolh_aar\TrainingMaterial\PracticeCode\CountOccuranceOfEachCharacter\bin\Debug\net6.0\CountOccuranceOfEachCharacter.dll
+C:\Users\kolh_aar\TrainingMaterial\PracticeCode\CountOccuranceOfEachCharacter\bin\Debug\net6.0\CountOccuranceOfEachCharacter.pdb
+C:\Users\kolh_aar\TrainingMaterial\PracticeCode\CountOccuranceOfEachCharacter\obj\Debug\net6.0\CountOccuranceOfEachCharacter.csproj.AssemblyReference.cache
+C:\Users\kolh_aar\TrainingMaterial\PracticeCode\CountOccuranceOfEachCharacter\obj\Debug\net6.0\CountOccuranceOfEachCharacter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kolh_aar\TrainingMaterial\PracticeCode\CountOccuranceOfEachCharacter\obj\Debug\net6.0\CountOccuranceOfEachCharacter.AssemblyInfoInputs.cache
+C:\Users\kolh_aar\TrainingMaterial\PracticeCode\CountOccuranceOfEachCharacter\obj\Debug\net6.0\CountOccuranceOfEachCharacter.AssemblyInfo.cs
+C:\Users\kolh_aar\TrainingMaterial\PracticeCode\CountOccuranceOfEachCharacter\obj\Debug\net6.0\CountOccuranceOfEachCharacter.csproj.CoreCompileInputs.cache
+C:\Users\kolh_aar\TrainingMaterial\PracticeCode\CountOccuranceOfEachCharacter\obj\Debug\net6.0\CountOccuranceOfEachCharacter.dll
+C:\Users\kolh_aar\TrainingMaterial\PracticeCode\CountOccuranceOfEachCharacter\obj\Debug\net6.0\refint\CountOccuranceOfEachCharacter.dll
+C:\Users\kolh_aar\TrainingMaterial\PracticeCode\CountOccuranceOfEachCharacter\obj\Debug\net6.0\CountOccuranceOfEachCharacter.pdb
+C:\Users\kolh_aar\TrainingMaterial\PracticeCode\CountOccuranceOfEachCharacter\obj\Debug\net6.0\CountOccuranceOfEachCharacter.genruntimeconfig.cache
+C:\Users\kolh_aar\TrainingMaterial\PracticeCode\CountOccuranceOfEachCharacter\obj\Debug\net6.0\ref\CountOccuranceOfEachCharacter.dll

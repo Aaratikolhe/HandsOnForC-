@@ -1,0 +1,15 @@
+C:\Users\kolh_aar\TrainingMaterial\PracticeCode\CreatePatternUsingLoops\bin\Debug\net6.0\CreatePatternUsingLoops.exe
+C:\Users\kolh_aar\TrainingMaterial\PracticeCode\CreatePatternUsingLoops\bin\Debug\net6.0\CreatePatternUsingLoops.deps.json
+C:\Users\kolh_aar\TrainingMaterial\PracticeCode\CreatePatternUsingLoops\bin\Debug\net6.0\CreatePatternUsingLoops.runtimeconfig.json
+C:\Users\kolh_aar\TrainingMaterial\PracticeCode\CreatePatternUsingLoops\bin\Debug\net6.0\CreatePatternUsingLoops.dll
+C:\Users\kolh_aar\TrainingMaterial\PracticeCode\CreatePatternUsingLoops\bin\Debug\net6.0\CreatePatternUsingLoops.pdb
+C:\Users\kolh_aar\TrainingMaterial\PracticeCode\CreatePatternUsingLoops\obj\Debug\net6.0\CreatePatternUsingLoops.csproj.AssemblyReference.cache
+C:\Users\kolh_aar\TrainingMaterial\PracticeCode\CreatePatternUsingLoops\obj\Debug\net6.0\CreatePatternUsingLoops.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kolh_aar\TrainingMaterial\PracticeCode\CreatePatternUsingLoops\obj\Debug\net6.0\CreatePatternUsingLoops.AssemblyInfoInputs.cache
+C:\Users\kolh_aar\TrainingMaterial\PracticeCode\CreatePatternUsingLoops\obj\Debug\net6.0\CreatePatternUsingLoops.AssemblyInfo.cs
+C:\Users\kolh_aar\TrainingMaterial\PracticeCode\CreatePatternUsingLoops\obj\Debug\net6.0\CreatePatternUsingLoops.csproj.CoreCompileInputs.cache
+C:\Users\kolh_aar\TrainingMaterial\PracticeCode\CreatePatternUsingLoops\obj\Debug\net6.0\CreatePatternUsingLoops.dll
+C:\Users\kolh_aar\TrainingMaterial\PracticeCode\CreatePatternUsingLoops\obj\Debug\net6.0\refint\CreatePatternUsingLoops.dll
+C:\Users\kolh_aar\TrainingMaterial\PracticeCode\CreatePatternUsingLoops\obj\Debug\net6.0\CreatePatternUsingLoops.pdb
+C:\Users\kolh_aar\TrainingMaterial\PracticeCode\CreatePatternUsingLoops\obj\Debug\net6.0\CreatePatternUsingLoops.genruntimeconfig.cache
+C:\Users\kolh_aar\TrainingMaterial\PracticeCode\CreatePatternUsingLoops\obj\Debug\net6.0\ref\CreatePatternUsingLoops.dll
