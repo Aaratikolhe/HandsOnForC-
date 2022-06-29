@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kolh_aar\\TrainingMaterial\\PracticeCode\\CreatePatternUsingLoops\\CreatePatternUsingLoops.csproj": {}
+    "C:\\Users\\kolh_aar\\TrainingMaterial\\HandsOnForC#\\CreatePatternUsingLoops\\CreatePatternUsingLoops.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kolh_aar\\TrainingMaterial\\PracticeCode\\CreatePatternUsingLoops\\CreatePatternUsingLoops.csproj": {
+    "C:\\Users\\kolh_aar\\TrainingMaterial\\HandsOnForC#\\CreatePatternUsingLoops\\CreatePatternUsingLoops.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kolh_aar\\TrainingMaterial\\PracticeCode\\CreatePatternUsingLoops\\CreatePatternUsingLoops.csproj",
+        "projectUniqueName": "C:\\Users\\kolh_aar\\TrainingMaterial\\HandsOnForC#\\CreatePatternUsingLoops\\CreatePatternUsingLoops.csproj",
         "projectName": "CreatePatternUsingLoops",
-        "projectPath": "C:\\Users\\kolh_aar\\TrainingMaterial\\PracticeCode\\CreatePatternUsingLoops\\CreatePatternUsingLoops.csproj",
+        "projectPath": "C:\\Users\\kolh_aar\\TrainingMaterial\\HandsOnForC#\\CreatePatternUsingLoops\\CreatePatternUsingLoops.csproj",
         "packagesPath": "C:\\Users\\kolh_aar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kolh_aar\\TrainingMaterial\\PracticeCode\\CreatePatternUsingLoops\\obj\\",
+        "outputPath": "C:\\Users\\kolh_aar\\TrainingMaterial\\HandsOnForC#\\CreatePatternUsingLoops\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

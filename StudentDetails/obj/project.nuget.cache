@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Le+Jg4fFR+LpSJkiNYgov6692fCmxzcgHgtG4AUonXmimFIW6wZUB7dzl6oo6W+jggKx70hMNhkOayYnYex6uw==",
+  "dgSpecHash": "kM2Po3ubdPi+ADJA7mbUSo8pJ93EQNUa2O8L0pRMuI9DbnhSrcHpOtvmEivVSkWgtcE9qEPAVMCf1GDMqT8Tyw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kolh_aar\\TrainingMaterial\\PracticeCode\\StudentDetails\\StudentDetails.csproj",
+  "projectFilePath": "C:\\Users\\kolh_aar\\TrainingMaterial\\HandsOnForC#\\StudentDetails\\StudentDetails.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
