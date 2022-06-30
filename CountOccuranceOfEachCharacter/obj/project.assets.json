@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kolh_aar\\TrainingMaterial\\PracticeCode\\CountOccuranceOfEachCharacter\\CountOccuranceOfEachCharacter.csproj",
+      "projectUniqueName": "C:\\Users\\kolh_aar\\TrainingMaterial\\HandsOnForC#\\CountOccuranceOfEachCharacter\\CountOccuranceOfEachCharacter.csproj",
       "projectName": "CountOccuranceOfEachCharacter",
-      "projectPath": "C:\\Users\\kolh_aar\\TrainingMaterial\\PracticeCode\\CountOccuranceOfEachCharacter\\CountOccuranceOfEachCharacter.csproj",
+      "projectPath": "C:\\Users\\kolh_aar\\TrainingMaterial\\HandsOnForC#\\CountOccuranceOfEachCharacter\\CountOccuranceOfEachCharacter.csproj",
       "packagesPath": "C:\\Users\\kolh_aar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kolh_aar\\TrainingMaterial\\PracticeCode\\CountOccuranceOfEachCharacter\\obj\\",
+      "outputPath": "C:\\Users\\kolh_aar\\TrainingMaterial\\HandsOnForC#\\CountOccuranceOfEachCharacter\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

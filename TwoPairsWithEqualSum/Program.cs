@@ -51,7 +51,7 @@
 
         public static void Main(string[] args)
         {
-            int[] array = { 2, 3, 4, 11, 6, 9 };
+            int[] array = { 3,2,8,9,4, 11, 6, 9 };
             FindSubsetWithSameSum(array);
 
 

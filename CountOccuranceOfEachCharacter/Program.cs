@@ -4,9 +4,9 @@
     {
         public static void Main(string[] args)
         {
-            string str = "Welcome";
+            string str = "Wwelcome To India";
             int count=0;
-            var str2 = str.Distinct();
+            var str2 = str.ToLower().Distinct();
             foreach (char ch in str2)
             {
                 count = CalculateOccuranceOfEachCharacter(str, ch);
@@ -17,7 +17,6 @@
         public static int CalculateOccuranceOfEachCharacter(string str, char ch)
         {
             int count = 0;
-            string copyString = str;
             for (int i = 0; i < str.Length; i++)
             {
 
@@ -25,9 +24,7 @@
                 {
                     count++;
                 }
-
             }
-
             return count;
         }
     }
