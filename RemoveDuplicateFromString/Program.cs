@@ -16,10 +16,12 @@
         //    var str2 = str.Distinct();
         //    return str2;
         //}
-        
+
         public static void Main(string[] args)
         {
-            string str = "  Welcome to the World";
+            Console.WriteLine("Enter any string");
+            string str = Console.ReadLine();
+            //string str = "  Welcome to the World";
             int count = 0;
             string distinctCharString = RemoveDuplicateElement(str);
             Console.WriteLine(distinctCharString);
@@ -27,12 +29,12 @@
         }
         public static string RemoveDuplicateElement(string str)
         {
-            string newString="";
-            for(int i=0;i<str.Length;i++)
+            string newString = "";
+            for (int i = 0; i < str.Length; i++)
             {
-                if(!newString.Contains(str[i]))
+                if (!newString.Contains(str[i], StringComparison.CurrentCultureIgnoreCase))
                 {
-                    newString+=str[i];
+                    newString += str[i];
                 }
             }
 
