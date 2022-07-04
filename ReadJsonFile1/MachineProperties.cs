@@ -1,8 +1,10 @@
-﻿namespace ReadJsonFile1
+﻿using Newtonsoft.Json;
+namespace ReadJsonFile1
 {
     public class Properties
     {
-        public string? DataString { get; set; }
-        public string? Value { get; set; }
+        [JsonProperty("DataString")]
+        public string? PropertyDataString { get; set; }
+        public string? value { get; set; }
     }
 }

@@ -23,8 +23,8 @@ namespace ReadJsonFile1
                     Console.WriteLine("\t  Properties: \n\t\t[ ");
                     foreach (Properties property in propertiesList)
                     {
-                        Console.WriteLine("\t\tDataString: "+property.DataString);
-                        Console.WriteLine("\t\tValue: " + property.Value);
+                        Console.WriteLine("\t\tDataString: "+property.PropertyDataString);
+                        Console.WriteLine("\t\tValue: " + property.value);
                     }
                     Console.WriteLine("\t\t]\n\t }");
                 }
