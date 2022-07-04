@@ -10,7 +10,7 @@ namespace TwoPairsWithEqualSum
     {
         public static void Main(string[] args)
         {
-            int[] array = { 3, 2, 8, 9, 4, 11, 6, 9 };
+            int[] array = { 8, 9, 4, 11, 7, 10, 11, 6 };
             FindPairsWithSameSum(array);
         }
 
@@ -18,21 +18,48 @@ namespace TwoPairsWithEqualSum
         {
             int sum1 = 0;
             int sum2 = 0;
-            for(int i = 0; i < array.Length-1; i++)
+            int flag = 0;
+            List<Pair> pairList = new List<Pair>();
+            for (int i = 0; i < array.Length - 1; i++)
             {
-                
-                    sum1 = array[i] + array[i + 1];
-                    for (int j = 0; j < array.Length - 1; j++)
-                    {
-                        sum2 = array[i] + array[j];
-                    }
-                    if(sum1==sum2)
+
+                sum1 = array[i] + array[i + 1];
+                pairList.Add(new Pair(array[i], array[i + 1]));
+                for (int j = i + 1; j < array.Length-2; j++)
                 {
-                    Console.WriteLine(array[i]+ array[j]));
+                    sum2 = array[j] + array[j + 1];
+
+                    if (sum1 == sum2)
+                    {
+                        Console.WriteLine($"({array[i]},{array[i + 1]}) , ({array[j]},{array[j + 1]})");
+                        pairList.Add(new Pair(array[j], array[j + 1]));
+                        flag = 1;
+                    }
+                    
                 }
-                
-                
+                if (flag==0)
+                {
+                    pairList.Remove(new Pair(array[i], array[i + 1]));
+                }
+
             }
+            foreach (Pair pair in pairList)
+                Console.WriteLine(pair.ToString());
+        }
+    }
+    class Pair
+    {
+        public int FirstElement { get; }
+        public int SecondElement { get; }
+
+        public Pair(int firstElement, int secondElement)
+        {
+            FirstElement = firstElement;
+            SecondElement = secondElement;
+        }
+        public override string? ToString()
+        {
+            return $"( {FirstElement}  {SecondElement} )";
         }
     }
 }
