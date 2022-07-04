@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StudentDetails
 {
-    public static class Extension
+    public static class ExtensionMethod
     {
         public static int FindStudentWithMaximumAge(this List<Student> list)
         {
