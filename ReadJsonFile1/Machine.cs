@@ -8,8 +8,12 @@ namespace ReadJsonFile1
 {
     public class Machine
     {
-        public string? Name { get; set; }
-        public List<PossibleActions>? PossibleActions { get; set; }
-
+        public string Name { get; set; }
+        public List<PossibleActions> PossibleActions { get; set; }
+        public Machine(string name, List<PossibleActions> possibleActions)
+        {
+            Name = name;
+            PossibleActions = possibleActions;
+        }
     }
 }

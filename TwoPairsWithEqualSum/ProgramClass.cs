@@ -11,10 +11,12 @@ namespace TwoPairsWithEqualSum
         public static void Main(string[] args)
         {
             int[] array = { 8, 9, 4, 11, 7, 10, 11, 6 };
-            FindPairsWithSameSum(array);
+            List<Pair> listOfEqualSumPairs=FindPairsWithSameSum(array);
+            foreach (Pair pair in listOfEqualSumPairs)
+                Console.WriteLine(pair.ToString());
         }
 
-        private static void FindPairsWithSameSum(int[] array)
+        private static List<Pair> FindPairsWithSameSum(int[] array)
         {
             int sum1 = 0;
             int sum2 = 0;
@@ -22,16 +24,15 @@ namespace TwoPairsWithEqualSum
             List<Pair> pairList = new List<Pair>();
             for (int i = 0; i < array.Length - 1; i++)
             {
-
+                flag = 0;
                 sum1 = array[i] + array[i + 1];
                 pairList.Add(new Pair(array[i], array[i + 1]));
-                for (int j = i + 1; j < array.Length-2; j++)
+                for (int j = i + 1; j < array.Length-1; j++)
                 {
                     sum2 = array[j] + array[j + 1];
 
-                    if (sum1 == sum2)
+                    if (sum1 == sum2&& !pairList.Contains(new Pair(array[j], array[j + 1])))
                     {
-                        Console.WriteLine($"({array[i]},{array[i + 1]}) , ({array[j]},{array[j + 1]})");
                         pairList.Add(new Pair(array[j], array[j + 1]));
                         flag = 1;
                     }
@@ -39,12 +40,12 @@ namespace TwoPairsWithEqualSum
                 }
                 if (flag==0)
                 {
-                    pairList.Remove(new Pair(array[i], array[i + 1]));
+                    pairList.RemoveAt(pairList.Count - 1);
                 }
 
             }
-            foreach (Pair pair in pairList)
-                Console.WriteLine(pair.ToString());
+            return pairList;
+            
         }
     }
     class Pair

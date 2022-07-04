@@ -10,10 +10,13 @@
             List<Student> studentList = new List<Student>();
             studentList.Add(Ram);
             studentList.Add(new Student(2, "Seeta",15, new Marks(88, 77, 66, 55, 85)));
-            studentList.Add(new Student(2, "Geeta",16, new Marks(58, 77, 76, 55, 75)));
+            studentList.Add(new Student(2, "Geeta",17, new Marks(58, 77, 76, 55, 75)));
             studentList.Add(new Student(3, "Tom",14, new Marks(86, 75, 69, 75, 79)));
             studentList.Add(new Student(4, "Tina",13, new Marks(74, 77, 66, 55, 85)));
-
+            var maxAge = studentList.FindStudentWithMaximumAge();
+            var studentWithMaxAgeList= studentList.Where(student => student.Age ==maxAge);
+            foreach(var student in studentWithMaxAgeList)
+            Console.WriteLine($"Student with maximum Age :Atudent Id= {student.Id},Student Name={student.Name} ");
             //string choice="continue";
             //while(choice!="quit")
             //{
