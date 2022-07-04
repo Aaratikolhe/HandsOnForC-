@@ -4,56 +4,43 @@ namespace ReadJsonFile1
 {
     public class Program
     {
+        
         public static void Main(string[] args)
         {
-
-            Product table = new Product()
+            string JsonFilePath = @"C:\Users\kolh_aar\TrainingMaterial\HandsOnForC#\MachineStatus.json";
+            List<Machine>? machineList = DeserializeJsonFile(JsonFilePath);
+            Console.WriteLine("[");
+            foreach (Machine machineItem in machineList)
             {
-                ProductId = 1,
-                ProductName = "Table",
-                ProductDescription = new ProductProperties
+                Console.WriteLine("  {");
+                Console.WriteLine("    Name: "+machineItem.Name + " ");
+                List<PossibleActions>? possibleActionsList = machineItem.PossibleActions;
+                Console.WriteLine("    Possible actions :[");
+                foreach (PossibleActions possibleAction in possibleActionsList)
                 {
-                    Color = "Brown",
-                    Category = "Furniture",
-                    Height = 25,
-                    Width = 40
-                },
-                ProductPrice = 8000,
-                ProductQuantity = 5
-            };
-            SerializeJsonFile(table);
-            string JsonFilePath = @"C:\Users\kolh_aar\TrainingMaterial\HandsOnForC#\Product.json";
-            Product? product = DeserializeJsonFile(JsonFilePath);
-            Console.WriteLine(product.ProductName+" "+product.ProductDescription.Color);
-        }
-        public static void SerializeJsonFile(Product product)
-        {
-            string jsonString = JsonConvert.SerializeObject(product);
-
-            string filePath = @"C:\Users\kolh_aar\TrainingMaterial\HandsOnForC#\Product.json";
-            if (File.Exists(filePath))
-            {
-                File.Delete(filePath);
+                    Console.WriteLine("\t {\n\t  Name: "+possibleAction.Name);
+                    List<Properties>? propertiesList =possibleAction.Properties;
+                    Console.WriteLine("\t  Properties: \n\t\t[ ");
+                    foreach (Properties property in propertiesList)
+                    {
+                        Console.WriteLine("\t\tDataString: "+property.DataString);
+                        Console.WriteLine("\t\tValue: " + property.Value);
+                    }
+                    Console.WriteLine("\t\t]\n\t }");
+                }
+                Console.WriteLine("\t]");
+                Console.WriteLine("  }");
             }
-            using (var fileWrite = new StreamWriter(filePath, true))
-            {
-                fileWrite.WriteLine(jsonString);
-                fileWrite.Close();
-            }
-        }
+            Console.WriteLine("]");
 
-        public static Product? DeserializeJsonFile(string path)
+
+        }
+        public static List<Machine>? DeserializeJsonFile(string path)
         {
-            string jsonString=File.ReadAllText(path);
-            Product? product = JsonConvert.DeserializeObject<Product>(jsonString);
-            //JsonSerializer serializer = new JsonSerializer();
-            //using (StreamReader jsonFile = File.OpenText(path))
-            //{
-            //    Product product = (Product)serializer.Deserialize(jsonFile, typeof(Product));
-            //}
-            return product;
+            string jsonString = File.ReadAllText(path);
+            List<Machine>? machineDataList = JsonConvert.DeserializeObject<List<Machine>>(jsonString);
+            return machineDataList;
         }
-
     }
-    
+
 }
