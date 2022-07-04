@@ -1,0 +1,302 @@
+[
+  {
+    "Name": "CS200",
+    "PossibleActions": [
+      {
+        "Name": "CutterHead Setup",
+        "Properties": [
+          {
+            "DataString": "InventoryStatusType",
+            "Value": "ReadyForProduction"
+          },
+          {
+            "DataString": "Location",
+            "Value": "CS200"
+          },
+          {
+            "DataString": "AssetStateType",
+            "Value": "Production"
+          }
+        ]
+      },
+      {
+        "Name": "Update Setup",
+        "Properties": [
+          {
+            "DataString": "InventoryStatusType",
+            "Value": "ReadyForProduction"
+          },
+          {
+            "DataString": "Location",
+            "Value": "CS200"
+          },
+          {
+            "DataString": "AssetStateType",
+            "Value": "Production"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "CS200 Store",
+    "PossibleActions": [
+      {
+        "Name": "Submit For Production Use",
+        "Properties": [
+          {
+            "DataString": "InventoryStatusType",
+            "Value": "Available"
+          },
+          {
+            "DataString": "Location",
+            "Value": "CS200 Store"
+          },
+          {
+            "DataString": "AssetStateType",
+            "Value": "Production"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Fixture Setup Table",
+    "PossibleActions": [
+      {
+        "Name": "Fixture Setup",
+        "Properties": [
+          {
+            "DataString": "InventoryStatusType",
+            "Value": "ReadyForProduction"
+          },
+          {
+            "DataString": "Location",
+            "Value": "Fixture Setup Table"
+          },
+          {
+            "DataString": "AssetStateType",
+            "Value": "Production"
+          }
+        ]
+      },
+      {
+        "Name": "Update Setup",
+        "Properties": [
+          {
+            "DataString": "InventoryStatusType",
+            "Value": "ReadyForProduction"
+          },
+          {
+            "DataString": "Location",
+            "Value": "Fixture Setup Table"
+          },
+          {
+            "DataString": "AssetStateType",
+            "Value": "Production"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Cell Store",
+    "PossibleActions": [
+      {
+        "Name": "Submit For Production Use",
+        "Properties": [
+          {
+            "DataString": "InventoryStatusType",
+            "Value": "Available"
+          },
+          {
+            "DataString": "Location",
+            "Value": "Cell Store"
+          },
+          {
+            "DataString": "AssetStateType",
+            "Value": "Production"
+          }
+        ]
+      },
+      {
+        "Name": "Needs Grinding",
+        "Properties": [
+          {
+            "DataString": "InventoryStatusType",
+            "Value": "NeedsGrinding"
+          },
+          {
+            "DataString": "Location",
+            "Value": "Cell Store"
+          },
+          {
+            "DataString": "AssetStateType",
+            "Value": "TemporaryUnavailable"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Machine",
+    "PossibleActions": [
+      {
+        "Name": "Production Setup",
+        "Properties": [
+          {
+            "DataString": "InventoryStatusType",
+            "Value": "InProduction"
+          },
+          {
+            "DataString": "Location",
+            "Value": "Machine Name"
+          },
+          {
+            "DataString": "AssetStateType",
+            "Value": "Production"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Grinding Store",
+    "PossibleActions": [
+      {
+        "Name": "Submit For Grinding",
+        "Properties": [
+          {
+            "DataString": "InventoryStatusType",
+            "Value": "NeedsGrinding"
+          },
+          {
+            "DataString": "Location",
+            "Value": "Grinding Store"
+          },
+          {
+            "DataString": "AssetStateType",
+            "Value": "TemporaryUnavailable"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Coating Store",
+    "PossibleActions": [
+      {
+        "Name": "Out For Coating",
+        "Properties": [
+          {
+            "DataString": "InventoryStatusType",
+            "Value": "OutForCoating"
+          },
+          {
+            "DataString": "Location",
+            "Value": "Coating Store"
+          },
+          {
+            "DataString": "AssetStateType",
+            "Value": "TemporaryUnavailable"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "TMC",
+    "PossibleActions": [
+      {
+        "Name": "Issue For Production",
+        "Properties": [
+          {
+            "DataString": "InventoryStatusType",
+            "Value": "IssuedForProduction"
+          },
+          {
+            "DataString": "Location",
+            "Value": "TMC"
+          },
+          {
+            "DataString": "AssetStateType",
+            "Value": "Production"
+          }
+        ]
+      },
+      {
+        "Name": "Submit For Grinding",
+        "Properties": [
+          {
+            "DataString": "InventoryStatusType",
+            "Value": "NeedsGrinding"
+          },
+          {
+            "DataString": "Location",
+            "Value": "TMC"
+          },
+          {
+            "DataString": "AssetStateType",
+            "Value": "TemporaryUnavailable"
+          }
+        ]
+      },
+      {
+        "Name": "Out For Grinding",
+        "Properties": [
+          {
+            "DataString": "InventoryStatusType",
+            "Value": "OutForGrinding"
+          },
+          {
+            "DataString": "Location",
+            "Value": "TMC"
+          },
+          {
+            "DataString": "AssetStateType",
+            "Value": "TemporaryUnavailable"
+          }
+        ]
+      },
+      {
+        "Name": "In After Grinding",
+        "Properties": [
+          {
+            "DataString": "InventoryStatusType",
+            "Value": "Available"
+          },
+          {
+            "DataString": "Location",
+            "Value": "TMC"
+          },
+          {
+            "DataString": "AssetStateType",
+            "Value": "Production"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Production Store",
+    "PossibleActions": [
+      {
+        "Name": "Submit For Production Use",
+        "Properties": [
+          {
+            "DataString": "InventoryStatusType",
+            "Value": "Available"
+          },
+          {
+            "DataString": "Location",
+            "Value": "Production Store"
+          },
+          {
+            "DataString": "AssetStateType",
+            "Value": "Production"
+          }
+        ]
+      }
+    ]
+  }
+]
