@@ -43,15 +43,23 @@ namespace ReadJsonFile1
 
         public static Product? DeserializeJsonFile(string path)
         {
-            string jsonString = File.ReadAllText(path);
-       
-            JsonSerializer serializer = new JsonSerializer();
+            //string jsonString = File.ReadAllText(path);
+            //Product? product = JsonConvert.DeserializeObject<Product>(jsonString);
+            //return product;
 
+            //using (StreamReader jsonFile = File.OpenText(path))               
+            //{
+            //    Product product = (Product)serializer.Deserialize(jsonFile, typeof(Product));
+            //}
+
+            JsonSerializer serializer = new JsonSerializer();
             using (JsonTextReader jsonRead = new JsonTextReader(File.OpenText(path)))
             {
-                Product product = (Product)serializer.Deserialize(jsonRead, typeof(Product));
+                Product product = (Product)serializer.Deserialize(jsonRead);
                 return product;
             }
+            
+            
         }
     }
 }
