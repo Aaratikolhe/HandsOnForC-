@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vE5kWO/EoxCsh/RAwVeI9ogVH8PvQWGYuds83Lh8mAhtOKoMPh4tJfKJIT8Aibs5YZhJOkU/M5tEA37FVFC6lA==",
+  "dgSpecHash": "MWVzeKTOkh4lsRK9ZduR1XeRq7uYP3L4uEvbTomrAdrKLax7XNszZrCPeADwyhv//5WuOr6NWbetVX7bK4FiAA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kolh_aar\\TrainingMaterial\\HandsOnForC#\\TwoPairsWithEqualSum\\TwoPairsWithEqualSum.csproj",
+  "projectFilePath": "C:\\Users\\kolh_aar\\TrainingMaterial\\HandsOnForC#\\TwoPairsWithEqualSum\\PairsWithEqualSum.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

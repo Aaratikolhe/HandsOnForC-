@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kolh_aar\\TrainingMaterial\\HandsOnForC#\\TwoPairsWithEqualSum\\TwoPairsWithEqualSum.csproj",
-      "projectName": "TwoPairsWithEqualSum",
-      "projectPath": "C:\\Users\\kolh_aar\\TrainingMaterial\\HandsOnForC#\\TwoPairsWithEqualSum\\TwoPairsWithEqualSum.csproj",
+      "projectUniqueName": "C:\\Users\\kolh_aar\\TrainingMaterial\\HandsOnForC#\\TwoPairsWithEqualSum\\PairsWithEqualSum.csproj",
+      "projectName": "PairsWithEqualSum",
+      "projectPath": "C:\\Users\\kolh_aar\\TrainingMaterial\\HandsOnForC#\\TwoPairsWithEqualSum\\PairsWithEqualSum.csproj",
       "packagesPath": "C:\\Users\\kolh_aar\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\kolh_aar\\TrainingMaterial\\HandsOnForC#\\TwoPairsWithEqualSum\\obj\\",
       "projectStyle": "PackageReference",
