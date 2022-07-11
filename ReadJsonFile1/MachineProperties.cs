@@ -3,12 +3,12 @@ namespace ReadJsonFile1
 {
     public class Properties
     {
-        [JsonProperty("DataString")]
-        public string PropertyDataString { get; set; }
-        public string value { get; set; }
-        public Properties(string propertyDataString, string value)
+        //[JsonProperty("DataString")]
+        public string PropertyDataString { get; }
+        public string value { get; }
+        public Properties(string DataString, string value)
         {
-            PropertyDataString = propertyDataString;
+            PropertyDataString = DataString;
             this.value = value;
         }
     }

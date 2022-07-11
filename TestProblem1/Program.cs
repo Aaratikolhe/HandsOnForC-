@@ -16,10 +16,15 @@
             Console.WriteLine("Enter first name of employee to find details");
             string name = Console.ReadLine();
             List<Employee> employeeByName =GetEmployeeWithName(employeeList,name);
-            foreach (Employee employee in employeeByName)
+            if (employeeByName.Any())
             {
-                Console.WriteLine(employee.ToString());
+                foreach (Employee employee in employeeByName)
+                {
+                    Console.WriteLine(employee.ToString());
+                }
             }
+            else
+                Console.WriteLine("No employee record found with given name");
 
             Console.WriteLine("***Getting Employees having age greater than given age");
             Console.WriteLine("Enter age to find employees");
@@ -80,7 +85,7 @@
         }
         public static List<Employee> GetEmployeeWithName(List<Employee> employeeList,string name)
         {
-            List<Employee> employeeListWithGivenName = employeeList.Where(employee => employee.EmployeeFirstName == name).ToList();
+            List<Employee> employeeListWithGivenName = employeeList.Where(employee => employee.EmployeeFirstName.ToLower() == name.ToLower()).ToList();
             return employeeListWithGivenName;
         }
         public static List<Employee> GetEmployeeByAgeLimit(List<Employee> employeeList,double age)

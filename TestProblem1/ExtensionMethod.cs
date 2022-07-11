@@ -18,5 +18,9 @@ namespace TestProblem1
             double percentage =  femalePercentage+malePercentage;
             return percentage;
         }
+        //public static List<Employee> MyWhere(this List<Employee> list,Func<Employee,bool> myFunction)
+        //{
+            
+        //}
     }
 }
