@@ -13,14 +13,29 @@ namespace TestProblem1
         //    double percentage = ((mathMarks + scienceMarks + englishMarks) / total) * 100;
         //    return percentage;
         //}
-        public static double CalculatePercentage(this int total, double femalePercentage,double malePercentage)
+        //public static double CalculatePercentage(this int total, double femalePercentage,double malePercentage)
+        //{
+        //    double percentage =  femalePercentage+malePercentage;
+        //    return percentage;
+        //}
+        public static double CalculatePercentage(this int numberOfEmployee, int totalEmployee)
         {
-            double percentage =  femalePercentage+malePercentage;
+            double divison = (double)numberOfEmployee / (double)totalEmployee;
+            double percentage =divison*100;
             return percentage;
         }
-        //public static List<Employee> MyWhere(this List<Employee> list,Func<Employee,bool> myFunction)
-        //{
-            
-        //}
+
+        public static List<Employee> MyWhere(this List<Employee> list, Func<Employee, bool> myFunction)
+        {
+            bool flag=false;
+            List<Employee> empList = new List<Employee>();
+            foreach (Employee emp in list)
+            {
+                if (myFunction(emp))
+                    flag=true;
+                return flag;
+            }
+            return empList;
+        }
     }
 }
