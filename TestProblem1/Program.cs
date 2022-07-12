@@ -16,6 +16,7 @@
             Console.WriteLine("Enter first name of employee to find details");
             string name = Console.ReadLine();
             var employeeByName = employeeList.MyWhere(emp => emp.FirstName == name);
+            
             Console.WriteLine(employeeByName.Count);
             //List<Employee> employeeByName =GetEmployeeWithName(employeeList,name);
             if (employeeByName.Any())
@@ -31,7 +32,8 @@
             Console.WriteLine("***Getting Employees having age greater than given age");
             Console.WriteLine("Enter age to find employees");
             double age = Convert.ToDouble(Console.ReadLine());
-            List<Employee> employeeWithAgeAboveGivenAge = GetEmployeeByAgeLimit(employeeList, age);
+            //List<Employee> employeeWithAgeAboveGivenAge = GetEmployeeByAgeLimit(employeeList, age);
+            List<Employee> employeeWithAgeAboveGivenAge = employeeList.MyWhere(emp => emp.Age > age);
             foreach (Employee employee in employeeWithAgeAboveGivenAge)
             {
                 Console.WriteLine(employee.ToString());
