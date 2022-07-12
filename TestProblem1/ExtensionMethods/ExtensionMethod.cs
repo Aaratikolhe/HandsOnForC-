@@ -38,6 +38,10 @@ namespace TestProblem1.ExtensionMethods
         {
             return Constant.pie * circle.Radius * circle.Radius;
         }
+        public static int Age(this DateTime birthDate)
+        {
+            return  DateTime.Today.Year- birthDate.Year;
+        }
     }
 
 }

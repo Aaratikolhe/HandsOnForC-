@@ -8,7 +8,9 @@ namespace TestProblem1.Models
         public int Id { get; }
         public string FirstName { get; }
         public string LastName { get; }
+        public DateTime BirthDate { get; }
         public double Age { get; }
+        
         public Gender Gender { get; }
         public double Salary { get; }
         public string Department { get; }
@@ -17,6 +19,7 @@ namespace TestProblem1.Models
             int Id,
             string firstName,
             string lastName,
+            DateTime birthDate,
             double age,
             Gender gender,
             double salary,
@@ -25,6 +28,7 @@ namespace TestProblem1.Models
             this.Id = Id;
             FirstName = firstName;
             LastName = lastName;
+            BirthDate = birthDate;
             Age = age;
             Gender = gender;
             Salary = salary;
@@ -35,6 +39,10 @@ namespace TestProblem1.Models
         {
             return "Employee Id: " + Id + ", First Name: " + FirstName + ", Last Name: " + LastName + ", Gender: " + Gender +
                 ", Age: " + Age + ", Salary: " + Salary + ", Department Name: " + Department;
+        }
+        public double CalculateAge()
+        {
+            return BirthDate.Year - DateTime.Today.Year;
         }
 
     }

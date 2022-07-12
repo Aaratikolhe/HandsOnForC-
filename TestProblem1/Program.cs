@@ -91,8 +91,8 @@ namespace TestProblem1
                     string firstName = Console.ReadLine();
                     Console.WriteLine("Enter Employee Last Name");
                     string lastName = Console.ReadLine();
-                    Console.WriteLine("Enter Employee age");
-                    double age = Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine("Enter Employee Birth Date in yyyy,mm,dd format");
+                    DateTime birthDate = Convert.ToDateTime(Console.ReadLine());
                     Gender gender = new Gender();
                     while (gender != Gender.Female && gender != Gender.Male)
                     {
@@ -109,12 +109,12 @@ namespace TestProblem1
                             continue;
                         }
                     }
+                    double age = birthDate.Age();
                     Console.WriteLine("Enter Employee Salary");
                     double salary = Convert.ToDouble(Console.ReadLine());
-
                     Console.WriteLine("Enter Employee department Name");
                     string department = Console.ReadLine();
-                    employeeDetailsList.Add(new Employee(employeeId, firstName, lastName, age, gender, salary, department));
+                    employeeDetailsList.Add(new Employee(employeeId, firstName, lastName,birthDate,age, gender, salary, department));
                     Console.WriteLine("Press c to continue to add more employee details and q to exit ");
                     choice = Convert.ToChar(Console.ReadLine());
                     if (choice != 'c' & choice != 'q')
