@@ -1,4 +1,9 @@
-﻿namespace TestProblem1
+﻿
+using TestProblem1.EnumClass;
+using TestProblem1.ExtensionMethods;
+using TestProblem1.Models;
+
+namespace TestProblem1.Repositories
 {
     public class EmployeeRepository
     {
@@ -15,7 +20,7 @@
 
         public double FemaleEmployeePercentage
         {
-            get 
+            get
             {
                 int femaleEmployee = employeesList.Where(employee => employee.Gender == Gender.Female).Count();
                 femaleEmployeePercentage = femaleEmployee.CalculatePercentage(TotalEmployee);
@@ -26,10 +31,10 @@
 
         public double MaleEmployeePercentage
         {
-            get 
+            get
             {
                 int maleEmployee = employeesList.Where(employee => employee.Gender == Gender.Male).Count();
-                maleEmployeePercentage =maleEmployee.CalculatePercentage(TotalEmployee);
+                maleEmployeePercentage = maleEmployee.CalculatePercentage(TotalEmployee);
                 return maleEmployeePercentage;
             }
         }
@@ -45,4 +50,4 @@
             Console.WriteLine($"Total Female Employees percentage = {FemaleEmployeePercentage.ToString("n2")}");
         }
     }
-}    
+}

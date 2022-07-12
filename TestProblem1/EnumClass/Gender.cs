@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestProblem1
+namespace TestProblem1.EnumClass
 {
     public enum Gender
     {

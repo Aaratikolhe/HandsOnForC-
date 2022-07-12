@@ -1,11 +1,18 @@
-﻿namespace TestProblem1
+﻿
+using TestProblem1.EnumClass;
+using TestProblem1.ExtensionMethods;
+using TestProblem1.Models;
+using TestProblem1.Repositories;
+
+namespace TestProblem1
 {
     public class Program
     {
-
         public static void Main(string[] args)
         {
-
+            Circle circle = new Circle(4);
+            Console.WriteLine("Perimeter of circle : "+circle.CalculatePerimeterOfCircle());
+            Console.WriteLine("Area of circle : " + circle.CalculateAreaOfCircle());
             List<Employee> employeeList = GetEmployeeDetailsFromUser();
             foreach (Employee employee in employeeList)
             {
@@ -16,7 +23,7 @@
             Console.WriteLine("Enter first name of employee to find details");
             string name = Console.ReadLine();
             var employeeByName = employeeList.MyWhere(emp => emp.FirstName == name);
-            
+
             Console.WriteLine(employeeByName.Count);
             //List<Employee> employeeByName =GetEmployeeWithName(employeeList,name);
             if (employeeByName.Any())
@@ -94,7 +101,7 @@
                             Console.WriteLine("Enter Employee Gender:Female / Male");
                             string genderType = Console.ReadLine();
 
-                            gender = ((Gender)Enum.Parse(typeof(Gender), genderType));
+                            gender = (Gender)Enum.Parse(typeof(Gender), genderType);
                         }
                         catch
                         {

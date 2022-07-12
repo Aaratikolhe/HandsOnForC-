@@ -1,4 +1,6 @@
-﻿namespace TestProblem1
+﻿using TestProblem1.Models;
+using TestProblem1.AppConstant;
+namespace TestProblem1.ExtensionMethods
 {
     //public delegate TResult Func<in T, out TResult>(T arg);
     public static class ExtensionMethod
@@ -15,7 +17,7 @@
         //}
         public static double CalculatePercentage(this int numberOfEmployee, int totalEmployee)
         {
-            double divison = (double)numberOfEmployee / (double)totalEmployee;
+            double divison = numberOfEmployee / (double)totalEmployee;
             double percentage = divison * 100;
             return percentage;
         }
@@ -32,10 +34,10 @@
 
         }
 
-            //public static bool Func(Employee emp)
-            //{
-            //    if
-            //}
+        public static double CalculateAreaOfCircle(this Circle circle)
+        {
+            return Constant.pie * circle.Radius * circle.Radius;
         }
-   
+    }
+
 }

@@ -1,4 +1,7 @@
-﻿namespace TestProblem1
+﻿
+using TestProblem1.EnumClass;
+
+namespace TestProblem1.Models
 {
     public class Employee
     {
@@ -30,7 +33,7 @@
 
         public override string ToString()
         {
-            return "Employee Id: " + Id + ", First Name: " + FirstName + ", Last Name: " + LastName +", Gender: "+Gender +
+            return "Employee Id: " + Id + ", First Name: " + FirstName + ", Last Name: " + LastName + ", Gender: " + Gender +
                 ", Age: " + Age + ", Salary: " + Salary + ", Department Name: " + Department;
         }
 
