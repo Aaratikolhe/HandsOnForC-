@@ -1,4 +1,6 @@
-﻿namespace UsingNulls
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace UsingNulls
 {
     class Program
     {
@@ -21,9 +23,10 @@
             ExitProgramIfNull(student.LastName, "Last name");
 
             Console.WriteLine(student.ToUpperName());
+            Console.WriteLine("");
         }
-
-        public static void ExitProgramIfNull(string? lastName, string description)
+        
+        public static void ExitProgramIfNull([NotNull]string? lastName, string description)
         {
             if(lastName is null)
             {

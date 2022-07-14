@@ -109,12 +109,12 @@ namespace TestProblem1
                             continue;
                         }
                     }
-                    double age = birthDate.Age();
+                    //double age = birthDate.Age();
                     Console.WriteLine("Enter Employee Salary");
                     double salary = Convert.ToDouble(Console.ReadLine());
                     Console.WriteLine("Enter Employee department Name");
                     string department = Console.ReadLine();
-                    employeeDetailsList.Add(new Employee(employeeId, firstName, lastName,birthDate,age, gender, salary, department));
+                    employeeDetailsList.Add(new Employee(employeeId, firstName, lastName,birthDate, gender, salary, department));
                     Console.WriteLine("Press c to continue to add more employee details and q to exit ");
                     choice = Convert.ToChar(Console.ReadLine());
                     if (choice != 'c' & choice != 'q')
