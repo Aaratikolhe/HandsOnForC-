@@ -30,8 +30,8 @@ namespace TestProblem1.Models
             string lastName,
             DateTime birthDate,
             Gender gender,
-            double salary,
-            Department department)
+            double salary
+            //Department department)
         {
             this.Id = Id;
             FirstName = firstName;
@@ -39,13 +39,13 @@ namespace TestProblem1.Models
             BirthDate = birthDate;
             Gender = gender;
             Salary = salary;
-            Department = department;
+            //Department = department;
         }
 
         public override string ToString()
         {
             return "Employee Id: " + Id + ", First Name: " + FirstName + ", Last Name: " + LastName + ", Gender: " + Gender +
-                ", Age: " + Age + ", Salary: " + Salary + ", Department Name: " + Department;
+                ", Age: " + Age + ", Salary: " + Salary  ;
         }
         //public double CalculateAge()
         //{

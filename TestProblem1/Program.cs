@@ -130,13 +130,13 @@ namespace TestProblem1
                     if (result.ContainsKey(department))
                     {
                         
-                        result[department].Add(new Employee(employeeId, firstName, lastName, birthDate, gender, salary, department));
+                        result[department].Add(new Employee(employeeId, firstName, lastName, birthDate, gender, salary));
                         //result[department] = employeeDetailsList;
                     }
                     else
                     {
                         employeeDetailsList = new List<Employee>();
-                        employeeDetailsList.Add(new Employee(employeeId, firstName, lastName, birthDate, gender, salary,department));
+                        employeeDetailsList.Add(new Employee(employeeId, firstName, lastName, birthDate, gender, salary));
                         result.Add(department, employeeDetailsList);
                     }
                     
