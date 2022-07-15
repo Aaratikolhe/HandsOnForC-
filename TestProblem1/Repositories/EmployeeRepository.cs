@@ -1,5 +1,4 @@
-﻿
-using TestProblem1.EnumClass;
+﻿using TestProblem1.EnumClass;
 using TestProblem1.ExtensionMethods;
 using TestProblem1.Models;
 

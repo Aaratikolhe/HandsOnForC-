@@ -1,5 +1,4 @@
-﻿
-using TestProblem1.EnumClass;
+﻿using TestProblem1.EnumClass;
 using TestProblem1.ExtensionMethods;
 
 namespace TestProblem1.Models
@@ -12,18 +11,17 @@ namespace TestProblem1.Models
         public DateTime BirthDate { get; }
         public double age;
         public double Age
-        { 
-            get 
+        {
+            get
             {
-                //return BirthDate.Year - DateTime.Today.Year; 
                 return BirthDate.Age();
             }
         }
-        
+
         public Gender Gender { get; }
         public double Salary { get; }
         public Department Department { get; }
-        
+
         public Employee(
             int Id,
             string firstName,
@@ -46,13 +44,13 @@ namespace TestProblem1.Models
         public override string ToString()
         {
             return "Employee Id: " + Id + ", First Name: " + FirstName + ", Last Name: " + LastName + ", Gender: " + Gender +
-                ", Age: " + Age + ", Salary: " + Salary  ;
+                ", Age: " + Age + ", Salary: " + Salary;
         }
         //public double CalculateAge()
         //{
         //    return BirthDate.Year - DateTime.Today.Year;
         //}
-       
+
 
 
     }

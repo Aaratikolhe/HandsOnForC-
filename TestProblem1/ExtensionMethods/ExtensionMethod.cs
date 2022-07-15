@@ -1,20 +1,9 @@
 ﻿using TestProblem1.Models;
 using TestProblem1.AppConstant;
 namespace TestProblem1.ExtensionMethods
-{
-    //public delegate TResult Func<in T, out TResult>(T arg);
+{ 
     public static class ExtensionMethod
     {
-        //public static double CalculatePercentage(this int total,double mathMarks,double scienceMarks,double englishMarks)
-        //{
-        //    double percentage = ((mathMarks + scienceMarks + englishMarks) / total) * 100;
-        //    return percentage;
-        //}
-        //public static double CalculatePercentage(this int total, double femalePercentage,double malePercentage)
-        //{
-        //    double percentage =  femalePercentage+malePercentage;
-        //    return percentage;
-        //}
         public static double CalculatePercentage(this int numberOfEmployee, int totalEmployee)
         {
             double divison = numberOfEmployee / (double)totalEmployee;
