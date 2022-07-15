@@ -22,8 +22,8 @@ namespace TestProblem1.Models
         
         public Gender Gender { get; }
         public double Salary { get; }
-        public string Department { get; }
-
+        public Department Department { get; }
+        
         public Employee(
             int Id,
             string firstName,
@@ -31,7 +31,7 @@ namespace TestProblem1.Models
             DateTime birthDate,
             Gender gender,
             double salary,
-            string department)
+            Department department)
         {
             this.Id = Id;
             FirstName = firstName;
