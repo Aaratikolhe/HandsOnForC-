@@ -8,7 +8,6 @@ namespace TestProblem1.EnumClass
 {
     public enum Gender
     {
-        Default,
         Female,
         Male
     }

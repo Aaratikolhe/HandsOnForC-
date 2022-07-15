@@ -30,8 +30,9 @@ namespace TestProblem1.Models
             string lastName,
             DateTime birthDate,
             Gender gender,
-            double salary
-            //Department department)
+            double salary,
+            Department department
+            )
         {
             this.Id = Id;
             FirstName = firstName;
@@ -39,7 +40,7 @@ namespace TestProblem1.Models
             BirthDate = birthDate;
             Gender = gender;
             Salary = salary;
-            //Department = department;
+            Department = department;
         }
 
         public override string ToString()

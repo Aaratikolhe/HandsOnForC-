@@ -34,10 +34,6 @@ namespace TestProblem1.ExtensionMethods
 
         }
 
-        public static double CalculateAreaOfCircle(this Circle circle)
-        {
-            return Constant.pie * circle.Radius * circle.Radius;
-        }
         public static int Age(this DateTime birthDate)
         {
             return  DateTime.Today.Year- birthDate.Year;
