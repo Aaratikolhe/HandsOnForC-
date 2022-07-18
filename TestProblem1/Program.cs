@@ -10,7 +10,16 @@ namespace TestProblem1
         public static void Main(string[] args)
         {
             List<Employee> employeeList = GetEmployeeDetailsFromUser();
-
+            //List<Employee> employeeList = new List<Employee>()
+            //{
+            //    new Employee(1,"Arati","Kolhe",new DateTime(1996-07-06),Gender.Female,20000,Department.Development),
+            //    new Employee(2,"Yash","Mahajan",new DateTime(1993-14-06),Gender.Male,20000,Department.Purchase),
+            //    new Employee(3,"Shubham","Kolhe",new DateTime(1996-20-04),Gender.Male,20000,Department.Development),
+            //    new Employee(5,"Nikita","Bhole",new DateTime(1997-08-12),Gender.Female,20000,Department.Quality),
+            //    new Employee(4,"Bhuvan","Kolhe",new DateTime(2000-10-26),Gender.Male,20000,Department.Purchase),
+            //    new Employee(7,"Dheeraj","Khole",new DateTime(1994-09-18),Gender.Male,20000,Department.Quality),
+            //    new Employee(6,"Yogu","Kolhe",new DateTime(1998-08-16),Gender.Female,20000,Department.Sales),
+            //};
             Console.WriteLine("***Getting department wise employee names");
             Dictionary<Department, List<string>> departmentWiseEmployeeNames = Employee.getDepartmentWiseEmployeeName(employeeList);
             foreach (KeyValuePair<Department, List<string>> entry in departmentWiseEmployeeNames)
@@ -21,10 +30,13 @@ namespace TestProblem1
             }
 
             Console.WriteLine("***Getting Employee details using name");
-            Console.WriteLine("Enter first name of employee to find details");
-            string name = Console.ReadLine();
+            string name= "No valid input";
+            while (name== "No valid input")
+            {
+                Console.WriteLine("Enter first name of employee to find details");
+                name= Console.ReadLine() ?? "No valid input";
+            }
             var employeeByName = employeeList.MyWhere(emp => emp.FirstName == name);
-
             Console.WriteLine(employeeByName.Count);
             if (employeeByName.Any())
             {
@@ -57,7 +69,7 @@ namespace TestProblem1
 
             Console.WriteLine("***Deleting employee record by name");
             Console.WriteLine("Enter first name of employee to delete record");
-            string deleteName = Console.ReadLine();
+            string deleteName = Console.ReadLine() ?? "No valid input";
             int numberOfRecordDeleted = GetEmployeeListByDeletingDesiredRecord(employeeList, deleteName);
             foreach (Employee employee in employeeList)
             {
@@ -86,9 +98,9 @@ namespace TestProblem1
                     Console.WriteLine("Enter Employee Id");
                     int id = Convert.ToInt32(Console.ReadLine());
                     Console.WriteLine("Enter Employee first Name");
-                    string firstName = Console.ReadLine();
+                    string firstName = Console.ReadLine()??"Please enter valid firstName";
                     Console.WriteLine("Enter Employee Last Name");
-                    string lastName = Console.ReadLine();
+                    string lastName = Console.ReadLine() ?? "Please enter valid firstName";
                     Console.WriteLine("Enter Employee Birth Date in yyyy,mm,dd format");
                     DateTime birthDate = Convert.ToDateTime(Console.ReadLine());
                     Gender gender = new Gender();
@@ -97,7 +109,7 @@ namespace TestProblem1
                         try
                         {
                             Console.WriteLine("Enter Employee Gender:Female / Male");
-                            string genderType = Console.ReadLine();
+                            string genderType = Console.ReadLine()??"Please enter valid gender";
                             gender = (Gender)Enum.Parse(typeof(Gender), genderType);
                         }
                         catch
@@ -110,13 +122,16 @@ namespace TestProblem1
                     double salary = Convert.ToDouble(Console.ReadLine());
                     Console.WriteLine("Enter Employee department Name: *Development *Quality *Purchase *Sales");
                     Department department = new Department();
-                    department = (Department)Enum.Parse(typeof(Department), Console.ReadLine());
-
                     while (!Enum.IsDefined(typeof(Department), department))
-                    {
-                        Console.WriteLine("Please enter valid department Name");
-                        department = (Department)Enum.Parse(typeof(Gender), Console.ReadLine());
-                    }
+                        try
+                        {
+                        
+                            department = (Department)Enum.Parse(typeof(Department), Console.ReadLine() ?? "Invalid department name");
+                        }
+                        catch 
+                        {
+                            Console.WriteLine("Please enter valid department Name- *Development *Quality *Purchase *Sales");
+                        }
                     employeeList.Add(new Employee(id, firstName, lastName, birthDate, gender, salary, department));
                     Console.WriteLine("Press c to continue to add more employee details and q to exit ");
                     choice = Convert.ToChar(Console.ReadLine());
@@ -125,7 +140,7 @@ namespace TestProblem1
                 }
                 catch
                 {
-                    Console.WriteLine("Enter values in correct format(Id,salary,age-number format & first name,lastname,department name-string format");
+                    Console.WriteLine("Enter values in correct format(Id,salary,age-number format & first name,lastname,department name-(Development,Quality,Purchase,Sales)");
                 }
             }
             return employeeList;
