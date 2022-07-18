@@ -12,7 +12,7 @@ namespace TestProblem1
             List<Employee> employeeList = GetEmployeeDetailsFromUser();
 
             Console.WriteLine("***Getting department wise employee names");
-            Dictionary<Department, List<string>> departmentWiseEmployeeNames = getDepartmentWiseEmployeeName(employeeList);
+            Dictionary<Department, List<string>> departmentWiseEmployeeNames = Employee.getDepartmentWiseEmployeeName(employeeList);
             foreach (KeyValuePair<Department, List<string>> entry in departmentWiseEmployeeNames)
             {
                 Console.WriteLine(entry.Key + " : ");
@@ -145,24 +145,6 @@ namespace TestProblem1
             List<Employee> employeeListSortedOnNames = employeeList.OrderBy(employee => employee.FirstName).ToList();
             return employeeListSortedOnNames;
         }
-        public static Dictionary<Department, List<string>> getDepartmentWiseEmployeeName(List<Employee> employeeList)
-        {
-            Dictionary<Department, List<string>> result = new Dictionary<Department, List<string>>();
-            List<string> employeeNameList;
-            foreach (Employee employee in employeeList)
-            {
-                if (result.ContainsKey(employee.Department))
-                {
-                    result[employee.Department].Add(employee.FirstName);
-                }
-                else
-                {
-                    employeeNameList = new List<string>();
-                    employeeNameList.Add(employee.FirstName);
-                    result.Add(employee.Department, employeeNameList);
-                }
-            }
-            return result;
-        }
+        
     }
 }

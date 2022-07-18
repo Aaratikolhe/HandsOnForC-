@@ -46,12 +46,24 @@ namespace TestProblem1.Models
             return "Employee Id: " + Id + ", First Name: " + FirstName + ", Last Name: " + LastName + ", Gender: " + Gender +
                 ", Age: " + Age + ", Salary: " + Salary;
         }
-        //public double CalculateAge()
-        //{
-        //    return BirthDate.Year - DateTime.Today.Year;
-        //}
-
-
-
+        public static Dictionary<Department, List<string>> getDepartmentWiseEmployeeName(List<Employee> employeeList)
+        {
+            Dictionary<Department, List<string>> result = new Dictionary<Department, List<string>>();
+            List<string> employeeNameList;
+            foreach (Employee employee in employeeList)
+            {
+                if (result.ContainsKey(employee.Department))
+                {
+                    result[employee.Department].Add(employee.FirstName);
+                }
+                else
+                {
+                    employeeNameList = new List<string>();
+                    employeeNameList.Add(employee.FirstName);
+                    result.Add(employee.Department, employeeNameList);
+                }
+            }
+            return result;
+        }
     }
 }
