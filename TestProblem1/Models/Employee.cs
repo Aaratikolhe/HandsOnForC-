@@ -5,7 +5,14 @@ namespace TestProblem1.Models
 {
     public class Employee
     {
-        public Guid Id { get; }
+        public Guid id;
+        public Guid Id
+        {
+            get
+            {               
+                return Guid.NewGuid();
+            }
+        }
         public string FirstName { get; }
         public string LastName { get; }
         public DateTime BirthDate { get; }
@@ -23,7 +30,6 @@ namespace TestProblem1.Models
         public Department Department { get; }
 
         public Employee(
-            Guid Id,
             string firstName,
             string lastName,
             DateTime birthDate,
@@ -32,7 +38,6 @@ namespace TestProblem1.Models
             Department department
             )
         {
-            this.Id = Id;
             FirstName = firstName;
             LastName = lastName;
             BirthDate = birthDate;

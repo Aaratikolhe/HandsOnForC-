@@ -10,16 +10,7 @@ namespace TestProblem1
         public static void Main(string[] args)
         {
             List<Employee> employeeList = GetEmployeeDetailsFromUser();
-            //List<Employee> employeeList = new List<Employee>()
-            //{
-            //    new Employee(1,"Arati","Kolhe",new DateTime(1996-07-06),Gender.Female,20000,Department.Development),
-            //    new Employee(2,"Yash","Mahajan",new DateTime(1993-14-06),Gender.Male,20000,Department.Purchase),
-            //    new Employee(3,"Shubham","Kolhe",new DateTime(1996-20-04),Gender.Male,20000,Department.Development),
-            //    new Employee(5,"Nikita","Bhole",new DateTime(1997-08-12),Gender.Female,20000,Department.Quality),
-            //    new Employee(4,"Bhuvan","Kolhe",new DateTime(2000-10-26),Gender.Male,20000,Department.Purchase),
-            //    new Employee(7,"Dheeraj","Khole",new DateTime(1994-09-18),Gender.Male,20000,Department.Quality),
-            //    new Employee(6,"Yogu","Kolhe",new DateTime(1998-08-16),Gender.Female,20000,Department.Sales),
-            //};
+            
             Console.WriteLine("***Getting department wise employee names");
             Dictionary<Department, List<string>> departmentWiseEmployeeNames = Employee.getDepartmentWiseEmployeeName(employeeList);
             foreach (KeyValuePair<Department, List<string>> entry in departmentWiseEmployeeNames)
@@ -92,8 +83,7 @@ namespace TestProblem1
             Console.WriteLine("Enter Employee details");
             char choice = 'c';
             while (choice == 'c')
-            {
-                Guid id= Guid.NewGuid();
+            { 
                 try
                 {
                     Console.WriteLine("Enter Employee first Name");
@@ -102,7 +92,7 @@ namespace TestProblem1
                     string lastName = Console.ReadLine() ?? "Please enter valid firstName";
                     Console.WriteLine("Enter Employee Birth Date in yyyy,mm,dd format");
                     DateTime birthDate = Convert.ToDateTime(Console.ReadLine());
-                    Gender gender = new Gender();
+                    Gender gender=new Gender();
                     while (gender != Gender.Female && gender != Gender.Male)
                     {
                         try
@@ -131,7 +121,7 @@ namespace TestProblem1
                         {
                             Console.WriteLine("Please enter valid department Name- *Development *Quality *Purchase *Sales");
                         }
-                    employeeList.Add(new Employee(id, firstName, lastName, birthDate, gender, salary, department));
+                    employeeList.Add(new Employee(firstName, lastName, birthDate, gender, salary, department));
                     Console.WriteLine("Press c to continue to add more employee details and q to exit ");
                     choice = Convert.ToChar(Console.ReadLine());
                     if (choice != 'c' & choice != 'q')
