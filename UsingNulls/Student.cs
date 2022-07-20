@@ -10,29 +10,19 @@ namespace UsingNulls
     public class Student
     {
         public int Id { get; set; }
-        //public string? FirstName { get; set; }
         public string FirstName { get; set; }
-        private string lastName;
-
-        //[DisallowNull]
-        //public string? LastName 
-        //{ 
-        //    get=>lastName;
-        //    set=>lastName=value??throw new ArgumentNullException(nameof(value)); }
-
-        public string LastName
-        {
-            get => lastName;
-            set => lastName = value;
-        }
+        public string LastName;
         public int Age { get; set; }
         public DateTime BirthDate { get; set; }
-        public string? ToUpperName()=> FirstName?.ToUpperInvariant();
-        //public Student(string firstName, string lastName)
-        //{
-        //    FirstName = firstName;
-        //    LastName = lastName;
 
-        //}
+        public Student(int id, string firstName, string lastName, int age)
+        {
+            Id = id;
+            FirstName = firstName;
+            LastName = lastName;
+            Age = age;
+        }
+
+       
     }
 }

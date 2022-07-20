@@ -5,7 +5,7 @@ namespace TestProblem1.Models
 {
     public class Employee
     {
-        public int Id { get; }
+        public Guid Id { get; }
         public string FirstName { get; }
         public string LastName { get; }
         public DateTime BirthDate { get; }
@@ -23,7 +23,7 @@ namespace TestProblem1.Models
         public Department Department { get; }
 
         public Employee(
-            int Id,
+            Guid Id,
             string firstName,
             string lastName,
             DateTime birthDate,

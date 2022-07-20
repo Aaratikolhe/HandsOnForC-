@@ -93,10 +93,9 @@ namespace TestProblem1
             char choice = 'c';
             while (choice == 'c')
             {
+                Guid id= Guid.NewGuid();
                 try
                 {
-                    Console.WriteLine("Enter Employee Id");
-                    int id = Convert.ToInt32(Console.ReadLine());
                     Console.WriteLine("Enter Employee first Name");
                     string firstName = Console.ReadLine()??"Please enter valid firstName";
                     Console.WriteLine("Enter Employee Last Name");
